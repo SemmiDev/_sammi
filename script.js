@@ -12,8 +12,10 @@ window.onscroll = function () {
 const buttonku = document.getElementById('buttonku');
 buttonku.addEventListener('click', function () {
     const gambarku = document.getElementById('gambarku');
-    const tentangku = document.getElementById('about');
+    const about = document.getElementById('about');
+    const footer = document.getElementById('footer');
 
     gambarku.classList.toggle('hidden');
-    tentangku.classList.toggle('hidden');
-});
+    about.classList.toggle('hidden');
+    footer.classList.toggle('hidden');
+}); 
