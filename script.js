@@ -25,12 +25,12 @@ buttonku.addEventListener('click', function () {
 });
 
 buttonku2.addEventListener('click', function () {
-    const gambarku = document.getElementById('gambarku');
+    // const gambarku = document.getElementById('gambarku');
     const about = document.getElementById('about');
     const footer = document.getElementById('footer');
     const home = document.getElementById('home');
 
-    gambarku.classList.toggle('hidden');
+    // gambarku.classList.toggle('hidden');
     about.classList.toggle('hidden');
     footer.classList.toggle('hidden');
     home.classList.toggle('hidden');
