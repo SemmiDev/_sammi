@@ -7,7 +7,7 @@
     <title>Sammi Aldhi Yanto</title>
     <script src="./script.js" defer></script>
   </head>
-  <body style="background-color: #e7f9fb">
+  <body>
     <header
       class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
     >
@@ -37,31 +37,34 @@
             <h1 class="text-base font-semibold text-utama mb-1 md:text-xl">
               Hi folks 👋 my name is
               <span
-                class="block font-bold text-4xl lg:text-5xl mt-1 text-gelap"
+                class="block font-bold text-4xl lg:text-5xl mt-1"
+                style="color: #00bad2"
               >
                 Sammi Aldhi Yanto
               </span>
             </h1>
             <p
-              class="font-medium text-lg text-kedua mb-3 leading-relaxed lg:text-2xl"
+              class="font-medium text-lg mb-3 leading-relaxed lg:text-2xl"
+              style="color: #e1f8fa"
             >
               Student | Software Engineer
             </p>
             <p class="font-medium tett-kedua mb-10 leading-relaxed">
               <span class="italic text-pink-400">
-                Keep Learning, Keep Sharing</span
+                `Keep Learning & Keep Sharing`</span
               >
             </p>
 
             <a
               href="#about"
+              id="buttonku"
               class="text-base font-semibold text-white bg-utama rounded-full py-3 px-8 hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out"
-              >Read More</a
-            >
+              >About Me
+            </a>
           </div>
 
-          <div class="w-full self-end px-4 lg:w-1/2">
-            <div class="mt-10 relative lg:mt-0 lg:right-0">
+          <div class="w-full self-end px-4 lg:w-1/2 hidden" id="gambarku">
+            <div class="mt-1 relative lg:mt-0 lg:right-0">
               <img
                 class="max-w-full mx-auto lg:mt-1"
                 src="./img/sammi.png"
@@ -82,7 +85,6 @@
                     transform="translate(100 100) scale(1.8)"
                   />
                 </svg>
-                </svg>
               </span>
             </div>
           </div>
@@ -90,14 +92,17 @@
       </div>
     </section>
 
-    <section id="about" class="pt-36 pb-32">
+    <section id="about" class="pt-36 pb-32 hidden">
       <div class="container">
         <div class="flex flex-wrap">
-          <div class="w-full px-4 mb-10 lg:w-1/2">
+          <div class="w-full px-4 mb-1 lg:w-1/2">
             <h4 class="text-lg text-utama font-bold uppercase mb-3">
               About Me
             </h4>
-            <p class="font-medium text-kedua max-w-xl mb-4 lg:text-lg">
+            <p
+              class="font-medium text-kedua max-w-xl mb-4 lg:text-lg"
+              style="color: #e1f8fa"
+            >
               I’m
               <span class="font-semibold text-pink-400">Sammi Aldhi Yanto</span
               >, I’m a
@@ -110,7 +115,10 @@
               😎 Lol
             </p>
 
-            <p class="font-medium text-kedua max-w-xl mb-4 lg:text-lg">
+            <p
+              class="font-medium text-kedua max-w-xl mb-4 lg:text-lg"
+              style="color: #e1f8fa"
+            >
               Anyway, I’m now in 💝 with
               <span class="font-semibold">Go & Cloud Native</span>. In my spare
               time, I usually like to make content on my YouTube channel about
@@ -121,7 +129,10 @@
               >.
             </p>
 
-            <p class="font-medium text-kedua max-w-xl mb-4 lg:text-lg">
+            <p
+              class="font-medium text-kedua max-w-xl mb-4 lg:text-lg"
+              style="color: #e1f8fa"
+            >
               <span class="text-utama font-semibold">Life so far…</span>
               <br />
               - Breathing since October 20, 2001
@@ -131,7 +142,10 @@
               - Gopher
             </p>
 
-            <p class="font-medium text-kedua max-w-xl mb-4 lg:text-lg">
+            <p
+              class="font-medium text-kedua max-w-xl mb-4 lg:text-lg"
+              style="color: #e1f8fa"
+            >
               <span class="text-utama font-semibold">Passionate about…</span>
               <br />
               - Books
@@ -143,7 +157,10 @@
               - Food
             </p>
 
-            <p class="font-medium text-kedua max-w-xl mb-4 lg:text-lg">
+            <p
+              class="font-medium text-kedua max-w-xl mb-4 lg:text-lg"
+              style="color: #e1f8fa"
+            >
               <span class="text-utama font-semibold">Thinking about…</span>
               <br />
               - Cloud-Native Apps
@@ -155,10 +172,11 @@
             </p>
           </div>
           <div class="w-full px-4 lg:w-1/2">
-            <h4 class="text-lg text-utama font-bold uppercase mb-3">
-              Let's Connect
-            </h4>
-            <p class="font-medium text-base text-kedua lg:text-lg mb-6">
+            <h4 class="text-lg text-utama font-bold mb-1">Let's Connect</h4>
+            <p
+              class="font-medium text-base text-kedua lg:text-lg mb-6"
+              style="color: #e1f8fa"
+            >
               Want to be friends with me? please visit my socmed below.😊
             </p>
             <div class="flex items-center">
@@ -258,7 +276,7 @@
       </div>
     </section>
 
-    <footer class="bg-gelap pt-24 pb-12">
+    <footer class="pt-24 pb-12" style="background-color: #07191d">
       <div class="container">
         <div class="w-full pt-10 border-t border-slate-700">
           <div class="flex items-center justify-center mb-5">
@@ -354,19 +372,12 @@
             </a>
           </div>
 
-          <p class="font-medium text-xs text-slate-500 text-center">
+          <p class="font-medium text-xs text-white text-center">
             <a
               href="https://www.instagram.com/sammidev_/"
               target="_blank"
-              class="text-utama"
+              class="text-white"
               >Sammi Aldhi Yanto</a
-            >
-            |
-            <a
-              href="https://tailwindcss.com/"
-              target="_blank"
-              class="text-sky-500"
-              >2022</a
             >
           </p>
         </div>
